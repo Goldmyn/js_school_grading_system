@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<title>JAVASCRIPT Conditional Statement</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+	<style type="text/css">
+
+	body{
+		background-color: orange;
+		font-family: 'Cinzel', serif;
+	}
+	
+
+		
+	</style>
+</head>
+<body>				
+					
+	<div class="container">
+		<div class="row mt-4">
+			<h1 class=" text-danger text-center">SCHOOL GRADING SYSTEM</h1>
+			<div class="col-sm-4">
+				<h3>SUBJECT</h3>
+			</div>
+
+			<div class="col-sm-4">
+				<h3>SCORE</h3>
+			</div>
+
+			<div class="col-sm-4">
+				<h3>GRADE</h3>
+			</div>
+		</div>
+
+		<div class="row mt-4">
+			<div class="col-sm-4  mb-1">
+				<label for="eng" class="form-label">English</label>
+			</div>
+
+			<div class="col-sm-4  mb-1">
+				<input type="text" id="eng" value="" name="score" class="form-control scores" oninput="
+					englishScore()
+				" >
+			</div>	
+
+			<div class="col-sm-4 bg-light mb-1" id="engsco">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4  mb-1">
+				<label for="mat" class="form-label">Maths</label>
+			</div>
+
+			<div class="col-sm-4  mb-1">
+				<input type="text" id="mat" value="" name="score" class="form-control scores" oninput="
+					mathScore()
+				" >
+			</div>	
+
+			<div class="col-sm-4 bg-light  mb-1" id="matsco">
+				 
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4  mb-1">
+				<label for="chem" class="form-label">Chemistry</label>
+			</div>
+
+			<div class="col-sm-4  mb-1">
+				<input type="text" id="chem" value="" name="score" class="form-control scores" oninput="
+					chemistryScore()
+				">
+			</div>	
+
+			<div class="col-sm-4 bg-light  mb-1" id="chmsco">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4  mb-1">
+				<label for="bio" class="form-label">Biology</label>
+			</div>
+			
+			<div class="col-sm-4  mb-1">
+				<input type="text" id="bio" value="" name="score" class="form-control scores" oninput="
+					biologyScore()
+				" >
+			</div>
+
+			<div class="col-sm-4 bg-light  mb-1" id="biosco">
+				
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4  ">
+				<label for="fre" class="form-label">French</label>
+			</div>	
+
+			<div class="col-sm-4  mb-1">
+				<input type="text" id="fre" value="" class="form-control scores" oninput="
+
+				frenchScore()
+
+				" >
+			</div>	
+
+			<div class="col-sm-4 bg-light" id="fresco">
+				
+			</div>
+		</div>
+
+
+		<div class="row mt-4">
+				<div class="col-sm-12">
+					
+					<button type="button" class="btn btn-info" onclick="
+
+				getResult()
+
+							">	Get Result
+					</button>
+
+				</div>
+				
+			</div>
+			<div class="row mt-4">
+
+				<div class="col-sm-6">
+					
+					<h2>TOTAL</h2>
+					
+
+				</div>
+				<div class="col-sm-6 bg-light" id="tot"> 
+				</div>
+			</div>
+
+				<div class="row mt-4">
+
+					<div class="col-sm-6">
+
+						<h3> Remarks</h3>
+					</div>
+						<div class="col-sm-6 bg-light" id="remarks">
+
+
+					 </div>
+				</div>
+				
+
+				<div class="row mt-4">
+
+					<div class="col-sm-6"> 
+
+						<h4>Average</h4>
+
+					</div>
+
+					<div class="col-sm-6 bg-light" id="average"> 
+					</div>
+
+				</div>
+
+
+				<div class="row mt-4">
+					
+					<div class="col-sm-12 text-center img-fluid " id="image">
+						
+					</div>
+				</div>
+	</div>
+
+
+
+
+	
+	<!-- JS FILES -->
+	<script type="text/javascript" src="school.js" language="javascript">
+		
+		
+
+			
+
+				
+	</script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js" language="javascript"></script>
+
+</body>
+</html>
+
+
